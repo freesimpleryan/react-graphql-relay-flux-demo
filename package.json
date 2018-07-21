@@ -1,0 +1,51 @@
+{
+  "name": "webpack-react-stack",
+  "version": "1.0.0",
+  "description": "React GraphQL Test App",
+  "main": "src/server.js",
+  "browser": {
+    "./dist/index.js": "./dist/index.browser.js",
+    "./dist/index.esm.js": "./dist/index.browser.esm.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-relay": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-relay-plugin": "^0.11.0",
+    "babel-relay-plugin-loader": "^0.11.0",
+    "create-react-class": "^15.6.3",
+    "events": "^3.0.0",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "file-system": "^2.2.2",
+    "flux": "^3.1.3",
+    "graphql": "^0.13.2",
+    "graphql-relay": "^0.5.5",
+    "jquery": "^3.3.1",
+    "mongodb": "^3.0.10",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-relay": "^1.6.0",
+    "webpack": "^4.12.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "metadata": {
+    "graphql": {
+      "schema": "./src/data/schema.json"
+    }
+  }
+}
